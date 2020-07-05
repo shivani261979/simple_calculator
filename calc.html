@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../simpleCalc/style.css">
+</head>
+<body>
+
+    <div class="Calc">
+    <h1>
+        My First Simple Calculator!
+    </h1>
+    <!-- Use the form tag since it is in form  -->
+   
+    <form>
+        <table border="1">
+        <!-- Use the table tag  -->
+    
+        <tr> 
+            <td><h2> FirstNumber</h2></td>
+            <td>
+                <!-- Pass an id here so you can use it later -->
+              <h2>
+                  <!-- When we write an input it becomes an input box, this is an attribute of form tag and used for input box -->
+                  <!-- We can in id so we can use it later -->
+                  <input id = "txtFirstNumber" type ="text"/>
+              </h2>
+            </td>
+        </tr>
+        <tr> 
+            <td><h2> SecondNumber</h2></td>
+            <td>
+                <!-- Pass an id here so you can use it later -->
+              <h2><input id = "txtSecondNumber" type ="text"/></h2></td>
+        </tr>
+        <tr>
+            <td><input type ="button" value= "ADD"
+                onclick="calcAdd(txtFirstNumber.value,txtSecondNumber.value);">
+
+
+                <input type ="button" value= "Minus"
+                onclick="calcMinus(txtFirstNumber.value,txtSecondNumber.value);">
+                </td>
+
+                <td>
+
+                <input type ="button" value= "Multip"
+                onclick="calcMultiplication(txtFirstNumber.value,txtSecondNumber.value);">
+
+                <input type ="button" value= "Div"
+                onclick="calcDivision(txtFirstNumber.value,txtSecondNumber.value);">
+
+                <input type ="button" value= "Reset"
+                onclick="(txtFirstNumber.value,txtSecondNumber.value);">     
+
+        </td>
+        </tr>
+
+    </table>
+
+    </form>
+</div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="../simpleCalc/calc.js"></script>
+
+
+
+
+</body>
+
+
+</html>
